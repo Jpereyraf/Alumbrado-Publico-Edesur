@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EDESUR Dominicana &#8211; Sistema de Alumbrado P&#250;blico</title>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script><script>Chart.defaults.locale='en-US';</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <style>
@@ -319,7 +319,7 @@ let provSortCol='total', provSortDir=-1;
 let munSortCol='total', munSortDir=-1;
 let CHARTS={};
 
-function fmt(n){ return Number(n).toLocaleString('es-DO'); }
+function fmt(n){ return Number(n).toLocaleString('en-US'); }
 function pct(a,b){ return b ? (100*a/b).toFixed(1)+'%' : '0%'; }
 function ptitle(s){ return s.split(' ').map(function(w){return w[0]+w.slice(1).toLowerCase();}).join(' '); }
 
